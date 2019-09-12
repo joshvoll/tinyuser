@@ -1,0 +1,22 @@
+
+// test to create the users
+http://localhost:3000
+POST /api/user
+{
+    "email":"acordoba@sanservices.hn",
+    "username":"armando"
+}
+
+// test the login
+http://localhost:3000
+POST /api/login
+{
+    "email":"acordoba@sanservices.hn"
+}
+
+// test the token
+http://localhost:3000
+Authorization: Bearer ATj155DhhW8LDHyD129O5UNklEboADjqeeqq1LUpMQQ4idG3PQsSrCNY7zb8YUiyWnziLY8Aks2RiJaw5xgzR
+GET /api/auth_user
+
+
